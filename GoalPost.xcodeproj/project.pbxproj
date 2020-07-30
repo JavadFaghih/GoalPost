@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D1405BE24CEDEA300444DA6 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1405BD24CEDEA300444DA6 /* UIButtonExt.swift */; };
+		4D1405C024CEEBF700444DA6 /* FinishGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1405BF24CEEBF700444DA6 /* FinishGoalVC.swift */; };
+		4D3FC0F424CD8883009B631D /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3FC0F324CD8883009B631D /* CreateGoalVC.swift */; };
 		4D6A4A6724CC1CC000A87ADB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A4A6624CC1CC000A87ADB /* AppDelegate.swift */; };
 		4D6A4A6924CC1CC000A87ADB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A4A6824CC1CC000A87ADB /* SceneDelegate.swift */; };
 		4D6A4A6B24CC1CC000A87ADB /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A4A6A24CC1CC000A87ADB /* GoalsVC.swift */; };
@@ -15,9 +18,14 @@
 		4D6A4A7324CC1CC200A87ADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D6A4A7224CC1CC200A87ADB /* Assets.xcassets */; };
 		4D6A4A7624CC1CC200A87ADB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6A4A7424CC1CC200A87ADB /* LaunchScreen.storyboard */; };
 		4D6A4A8324CC2EB300A87ADB /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A4A8224CC2EB300A87ADB /* GoalCell.swift */; };
+		4D6A4A8524CC485600A87ADB /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A4A8424CC485600A87ADB /* GoalType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D1405BD24CEDEA300444DA6 /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
+		4D1405BF24CEEBF700444DA6 /* FinishGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishGoalVC.swift; sourceTree = "<group>"; };
+		4D3FC0F324CD8883009B631D /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
+		4D6A412C24D1752F005BD2F3 /* GoalPost.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoalPost.entitlements; sourceTree = "<group>"; };
 		4D6A4A6324CC1CC000A87ADB /* GoalPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D6A4A6624CC1CC000A87ADB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D6A4A6824CC1CC000A87ADB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +36,7 @@
 		4D6A4A7524CC1CC200A87ADB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D6A4A7724CC1CC200A87ADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D6A4A8224CC2EB300A87ADB /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
+		4D6A4A8424CC485600A87ADB /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +69,11 @@
 		4D6A4A6524CC1CC000A87ADB /* GoalPost */ = {
 			isa = PBXGroup;
 			children = (
+				4D6A412C24D1752F005BD2F3 /* GoalPost.entitlements */,
 				4D6A4A6624CC1CC000A87ADB /* AppDelegate.swift */,
 				4D6A4A6824CC1CC000A87ADB /* SceneDelegate.swift */,
 				4D6A4A8124CC1DF500A87ADB /* Extention */,
 				4D6A4A8024CC1DEE00A87ADB /* Enums */,
-				4D6A4A7F24CC1CEA00A87ADB /* Model */,
 				4D6A4A7E24CC1CE200A87ADB /* View */,
 				4D6A4A7D24CC1CD900A87ADB /* Controller */,
 				4D6A4A6C24CC1CC000A87ADB /* Main.storyboard */,
@@ -80,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				4D6A4A6A24CC1CC000A87ADB /* GoalsVC.swift */,
+				4D3FC0F324CD8883009B631D /* CreateGoalVC.swift */,
+				4D1405BF24CEEBF700444DA6 /* FinishGoalVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -92,16 +103,10 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		4D6A4A7F24CC1CEA00A87ADB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		4D6A4A8024CC1DEE00A87ADB /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				4D6A4A8424CC485600A87ADB /* GoalType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 		4D6A4A8124CC1DF500A87ADB /* Extention */ = {
 			isa = PBXGroup;
 			children = (
+				4D1405BD24CEDEA300444DA6 /* UIButtonExt.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -183,9 +189,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D1405C024CEEBF700444DA6 /* FinishGoalVC.swift in Sources */,
+				4D1405BE24CEDEA300444DA6 /* UIButtonExt.swift in Sources */,
 				4D6A4A6B24CC1CC000A87ADB /* GoalsVC.swift in Sources */,
 				4D6A4A6724CC1CC000A87ADB /* AppDelegate.swift in Sources */,
+				4D6A4A8524CC485600A87ADB /* GoalType.swift in Sources */,
 				4D6A4A7124CC1CC100A87ADB /* GoalPost.xcdatamodeld in Sources */,
+				4D3FC0F424CD8883009B631D /* CreateGoalVC.swift in Sources */,
 				4D6A4A8324CC2EB300A87ADB /* GoalCell.swift in Sources */,
 				4D6A4A6924CC1CC000A87ADB /* SceneDelegate.swift in Sources */,
 			);
@@ -334,15 +344,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GoalPost/GoalPost.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SP9RY5F98;
 				INFOPLIST_FILE = GoalPost/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.social.GoalPost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -353,15 +366,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GoalPost/GoalPost.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SP9RY5F98;
 				INFOPLIST_FILE = GoalPost/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.social.GoalPost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
